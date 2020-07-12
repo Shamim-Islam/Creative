@@ -1,0 +1,446 @@
+/*  basic color: #FFC107*/
+
+/* ------------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+	color: #333;
+	font-size: 16px;
+}
+
+*:focus {
+	outline: none;
+}
+
+/* ------------------------------------------------------- */
+/* GENERIC CSS */
+/* ------------------------------------------------------- */
+
+section {
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+}
+
+.section-title h2 {
+	position: relative;
+	font-size: 55px;
+	font-weight: 400;
+	color: #ffc107;
+	text-transform: uppercase;
+}
+
+.section-title h2:after {
+	content: " ";
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	background-color: #ffc107;
+	bottom: -20px;
+	margin-left: -32px;
+	left: 50%;
+}
+
+.section-title p {
+	width: 90%;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 45px auto 0 auto;
+	color: #666;
+}
+
+/* ------------------------------------------------------- */
+/* Navigation */
+/* ------------------------------------------------------- */
+
+.navbar-default {
+	background-color: rgba(51, 51, 51, 0.8);
+	border-bottom: 0px solid #ffc107;
+	z-index: 110;
+}
+
+.navbar-brand {
+	margin-left: 30px;
+	padding: 0;
+}
+
+.navbar-brand img {
+	height: 55px;
+	width: auto;
+}
+
+.nav-item {
+	padding-left: 15px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:focus {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+	color: #ffc107;
+}
+
+.navbar-default .navbar-nav > .active>a,
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+	color: #ffc107;
+}
+
+/* ------------------------------------------------------- */
+/* Header */
+/* ------------------------------------------------------- */
+
+.header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url(../img/header1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/header1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.header-text {
+	text-align: center;
+	margin-top: 15%;
+}
+
+.header-text h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 300;
+	text-transform: uppercase;
+	word-spacing: 4px;
+}
+
+.header-text p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 10px;
+	word-spacing: 2px;
+}
+
+.btn-cstm,
+.btn-cstm:link,
+.btn-cstm:visited {
+	padding: 10px 25px;
+	border: 2px solid #ffc107;
+	background-color: transparent;
+	border-radius: 15px;
+	margin-top: 20px;
+	color: #ffc107;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 5px;
+	line-height: 140%;
+	font-size: 18px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.btn-cstm:hover,
+.btn-cstm:active {
+	color: #555;
+	background-color: #ffc107;
+}
+
+/* ------------------------------------------------------- */
+/* Skills section */
+/* ------------------------------------------------------- */
+
+.skills {
+	background-color: #f6f6f6;
+	padding-bottom: 35px;
+}
+
+.col-lg-4 {
+	padding: 0 40px;
+	margin-bottom: 50px;
+}
+
+.cstm {
+	font-size: 450%;
+}
+
+.col-lg-4 h3 {
+	color: #666;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	word-spacing: 4px;
+}
+
+.col-lg-4 p {
+	font-weight: 400;
+	font-size: 17px;
+	color: #555;
+}
+
+/* ------------------------------------------------------- */
+/* Projects section */
+/* ------------------------------------------------------- */
+
+.col-lg-3 h3 {
+	color: #ffc107;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.col-lg-3 p {
+	color: #666;
+}
+
+/* ------------------------------------------------------- */
+/* Team section */
+/* ------------------------------------------------------- */
+
+.card {
+	border: 2px solid #ffc107;
+	margin-bottom: 30px;
+	box-shadow: 7px 18px 50px #555;
+}
+
+.card-body {
+	background-color: #efefef;
+	border-top: 2px solid #ffc107;
+}
+
+/* ------------------------------------------------------- */
+/* Counter section */
+/* ------------------------------------------------------- */
+
+.counter {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/counter-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/counter-bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+.counter-item i {
+	color: #ffc107;
+	font-size: 60px;
+}
+
+.counter-item h2 {
+	color: #d7dadb;
+	font-size: 38px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 1px;
+}
+
+.counter-item p {
+	color: #d7dadb;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+/* ------------------------------------------------------- */
+/* Progress section */
+/* ------------------------------------------------------- */
+
+.progress-br {
+	background-color: #161616;
+}
+
+.progress {
+	height: 18px;
+}
+
+.html {
+	width: 92%;
+}
+
+.css {
+	width: 88%;
+	background-color: red;
+}
+
+.js {
+	width: 75%;
+	background-color: yellow;
+}
+
+.bootstrp {
+	width: 97%;
+	background-color: green;
+}
+
+/* ------------------------------------------------------- */
+/* Testimonial  */
+/* ------------------------------------------------------- */
+
+.testimonial {
+	background-image: url(../img/testimoni-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.text-testimonial {
+	margin-top: -10px;
+	text-align: center;
+}
+
+.carousel-indicators {
+	bottom: -12px;
+}
+
+.carousel-inner .carousel-item img {
+	border: 2px solid #ffc107;
+	border-radius: 50%;
+	padding: 3px;
+}
+
+.testimonial-caption {
+	padding-bottom: 70px;
+}
+
+.testimonial-caption h2 {
+	color: #ffc107;
+	margin-top: 25px;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.testimonial-caption h4 {
+	color: #ffc107;
+}
+
+.testimonial-caption h4 span {
+	color: #d8d8d8;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.testimonial-caption p {
+	color: #d8d8d8;
+	font-size: 18px;
+	line-height: 27px;
+	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------- */
+/* Contact-us section */
+/* ------------------------------------------------------- */
+
+.contact-us {
+	background-color: #f6f6f6;
+}
+
+label {
+	font-size: 18px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+/* ------------------------------------------------------- */
+/* Footer section */
+/* ------------------------------------------------------- */
+
+footer {
+	background-color: #333;
+	font-size: 18px;
+	border-bottom: 2px solid #ffc107;
+}
+
+.address {
+	padding-left: 60px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.address h3 {
+	color: #ffc107;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+.address p {
+	color: #999;
+	font-style: italic;
+}
+
+.sam-copy p {
+	color: #999;
+	margin-top: 75px;
+}
+
+span {
+	color: #ffc107;
+}
+
+cite {
+	display: block;
+	margin-top: 25px;
+	color: #ffc107;
+}
+
+cite img {
+	height: 90px;
+	border: 2px solid #ffc107;
+	border-radius: 50%;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.social {
+	margin-top: 60px;
+	padding-right: 60px;
+}
+
+.social a i {
+	font-size: 180%;
+	padding-left: 25px;
+}
+
+.fb {
+	color: blue;
+}
+
+.youtb {
+	color: red;
+}
+
+.insta {
+	color: blueviolet;
+}
